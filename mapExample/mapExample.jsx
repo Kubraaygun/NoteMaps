@@ -38,6 +38,8 @@ const MapExample = () => {
   ];
   return (
     <MapView
+      // mapType="satellite"
+      showsUserLocation
       style={styles.map}
       provider={PROVIDER_GOOGLE}
       initialRegion={{
