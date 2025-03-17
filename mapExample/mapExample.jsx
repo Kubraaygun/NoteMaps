@@ -1,5 +1,5 @@
 //import liraries
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import MapView, {
   Marker,
@@ -12,34 +12,11 @@ import CustomMarker from './customMarker';
 
 // create a component
 const MapExample = () => {
-  const markers = [
-    {
-      title: 'Konum 1',
-      description: 'Aciklama 1',
-      coordinate: {
-        latitude: 41.0299551,
-        longitude: 29.0547955,
-      },
-    },
-    {
-      title: 'Konum 2',
-      description: 'Aciklama 2',
-      coordinate: {
-        latitude: 41.0266902,
-        longitude: 29.0473901,
-      },
-    },
-    {
-      title: 'Konum 3',
-      description: 'Aciklama 3',
-      coordinate: {
-        latitude: 41.027005,
-        longitude: 29.0502414,
-      },
-    },
-  ];
+  const [markers, setMarker] = useState([]);
+  console.log(markers);
   return (
     <MapView
+      onPress={values => setMarker([...markers, values.nativeEvent.coordinate])}
       // mapType="satellite"
       showsUserLocation
       style={styles.map}
@@ -51,11 +28,7 @@ const MapExample = () => {
         longitudeDelta: 0.0421,
       }}>
       {markers.map((marker, index) => (
-        <Marker
-          key={index}
-          title={marker.title}
-          description={marker.description}
-          coordinate={marker.coordinate}>
+        <Marker key={index} coordinate={marker}>
           <CustomMarker />
         </Marker>
       ))}
