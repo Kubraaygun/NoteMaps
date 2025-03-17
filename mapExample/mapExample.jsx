@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import MapView, {
   Marker,
+  Polygon,
+  Polyline,
   PROVIDER_DEFAULT,
   PROVIDER_GOOGLE,
 } from 'react-native-maps';
@@ -57,6 +59,38 @@ const MapExample = () => {
           <CustomMarker />
         </Marker>
       ))}
+      {/* <Polyline
+        coordinates={[
+          {
+            latitude: 41.0299551,
+            longitude: 29.0547955,
+          },
+          {
+            latitude: 41.027005,
+            longitude: 29.0502414,
+          },
+        ]}
+        strokeColor="red"
+        strokeWidth={2}
+      /> */}
+      {/* <Polygon
+        coordinates={[
+          {
+            latitude: 41.0299551,
+            longitude: 29.0547955,
+          },
+          {
+            latitude: 41.027005,
+            longitude: 29.0502414,
+          },
+          {
+            latitude: 41.0266902,
+            longitude: 29.0473901,
+          },
+        ]}
+        fillColor="black"
+        strokeWidth={2}
+      /> */}
     </MapView>
   );
 };
