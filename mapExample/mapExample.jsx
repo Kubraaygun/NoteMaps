@@ -1,6 +1,6 @@
 //import liraries
 import React, {useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import MapView, {
   Marker,
   Polygon,
@@ -9,13 +9,19 @@ import MapView, {
   PROVIDER_GOOGLE,
 } from 'react-native-maps';
 import CustomMarker from './customMarker';
+import CustomCollout from './customCollout';
 
 // create a component
 const MapExample = () => {
   const [markers, setMarker] = useState([]);
+  const [latlng, setlatlng] = useState({
+    latitude: 41.0053683,
+    longitude: 29.0547955,
+  });
   console.log(markers);
   return (
     <MapView
+      scrollEnabled={true}
       onPress={values => setMarker([...markers, values.nativeEvent.coordinate])}
       // mapType="satellite"
       showsUserLocation
@@ -28,10 +34,24 @@ const MapExample = () => {
         longitudeDelta: 0.0421,
       }}>
       {markers.map((marker, index) => (
-        <Marker key={index} coordinate={marker}>
-          <CustomMarker />
+        <Marker
+          title="Konum"
+          description="Konum 1"
+          draggable
+          key={index}
+          coordinate={marker}>
+          <CustomMarker {...marker}>
+            <CustomCollout />
+          </CustomMarker>
         </Marker>
       ))}
+
+      {/* <Marker
+        draggable
+        title="Konuum"
+        coordinate={latlng}
+        onDragEnd={e => setlatlng({x: e.nativeEvent.coordinate})}
+      /> */}
       {/* <Polyline
         coordinates={[
           {
@@ -64,6 +84,19 @@ const MapExample = () => {
         fillColor="black"
         strokeWidth={2}
       /> */}
+
+      <TouchableOpacity
+        style={{
+          width: 50,
+          height: 50,
+          backgroundColor: 'red',
+          borderRadius: 100,
+          bottom: 30,
+          right: 30,
+          position: 'absolute',
+        }}>
+        <Text>Add</Text>
+      </TouchableOpacity>
     </MapView>
   );
 };
@@ -71,7 +104,8 @@ const MapExample = () => {
 // define your styles
 const styles = StyleSheet.create({
   map: {
-    ...StyleSheet.absoluteFillObject,
+    flex: 1,
+    zIndex: 0,
   },
 });
 
