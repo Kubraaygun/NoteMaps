@@ -9,12 +9,13 @@ import MapView, {
   PROVIDER_DEFAULT,
   PROVIDER_GOOGLE,
 } from 'react-native-maps';
-import CustomMarker from './customMarker';
 import CustomCallout from './customCallout';
+import {Map1} from 'iconsax-react-native';
 
 // create a component
 const MapExample = () => {
   const [markers, setMarker] = useState([]);
+  const [mapType, setMapType] = useState('standard');
   const [latlng, setlatlng] = useState({
     latitude: 41.0053683,
     longitude: 29.0547955,
@@ -83,15 +84,17 @@ const MapExample = () => {
 
       <TouchableOpacity
         style={{
-          width: 50,
-          height: 50,
-          backgroundColor: 'red',
+          width: 70,
+          height: 70,
+          backgroundColor: 'white',
           borderRadius: 100,
           bottom: 30,
           right: 30,
           position: 'absolute',
+          justifyContent: 'center', // Yatayda ortalamak
+          alignItems: 'center',
         }}>
-        <Text>Add</Text>
+        <Text>Map</Text>
       </TouchableOpacity>
     </MapView>
   );
