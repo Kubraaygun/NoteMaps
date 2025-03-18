@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import MapView, {
+  Callout,
   Marker,
   Polygon,
   Polyline,
@@ -9,7 +10,7 @@ import MapView, {
   PROVIDER_GOOGLE,
 } from 'react-native-maps';
 import CustomMarker from './customMarker';
-import CustomCollout from './customCollout';
+import CustomCallout from './customCallout';
 
 // create a component
 const MapExample = () => {
@@ -34,15 +35,10 @@ const MapExample = () => {
         longitudeDelta: 0.0421,
       }}>
       {markers.map((marker, index) => (
-        <Marker
-          title="Konum"
-          description="Konum 1"
-          draggable
-          key={index}
-          coordinate={marker}>
-          <CustomMarker {...marker}>
-            <CustomCollout />
-          </CustomMarker>
+        <Marker key={index} coordinate={marker}>
+          <Callout>
+            <CustomCallout />
+          </Callout>
         </Marker>
       ))}
 
