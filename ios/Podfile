@@ -1,9 +1,6 @@
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
-  'require.resolve(
-    "react-native/scripts/react_native_pods.rb",
-    {paths: [process.argv[1]]},
-  )', __dir__]).strip
+  'require.resolve("react-native/scripts/react_native_pods.rb", {paths: [process.argv[1]]})', __dir__]).strip
 
 platform :ios, '14'
 prepare_react_native_project!
@@ -18,9 +15,11 @@ target 'notemaps' do
   config = use_native_modules!
 
   # React Native Maps dependencies
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
 
-rn_maps_path = '../node_modules/react-native-maps'
-pod 'react-native-google-maps', :path => rn_maps_path
+  # React Native SVG dependency
+  pod 'react-native-svg', :path => '../node_modules/react-native-svg'
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -28,18 +27,19 @@ pod 'react-native-google-maps', :path => rn_maps_path
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  # iOS Testing Target configuration
   target 'notemapsTests' do
     inherit! :complete
     # Pods for testing
   end
 
   post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    # Post-install hook for React Native iOS dependencies
     react_native_post_install(
       installer,
       config[:reactNativePath],
       :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
+      # :ccache_enabled => true  # Uncomment to enable ccache
     )
   end
 end
