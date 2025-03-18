@@ -10,46 +10,71 @@ import MapView, {
   PROVIDER_GOOGLE,
 } from 'react-native-maps';
 import CustomCallout from './customCallout';
+import {MapTypes} from './constants';
 import {Map1} from 'iconsax-react-native';
 
 // create a component
 const MapExample = () => {
   const [markers, setMarker] = useState([]);
-  const [mapType, setMapType] = useState('standard');
+  const [mapType, setMapType] = useState(MapTypes.STANDARD);
   const [latlng, setlatlng] = useState({
-    latitude: 41.0053683,
-    longitude: 29.0547955,
+    latitude: 41.027005,
+    longitude: 29.0502414,
   });
-  console.log(markers);
+  const setCustomMapType = () => {
+    switch (mapType) {
+      case MapTypes.STANDARD:
+        setMapType(MapTypes.HYBRID);
+        break;
+      case MapTypes.HYBRID:
+        setMapType(MapTypes.HYBRID_FLYOVER);
+        break;
+      case MapTypes.HYBRID_FLYOVER:
+        setMapType(MapTypes.MUTEDSTANDARD);
+        break;
+      case MapTypes.MUTEDSTANDARD:
+        setMapType(MapTypes.SATELLITE);
+        break;
+      case MapTypes.SATELLITE:
+        setMapType(MapTypes.TERRAIN);
+        break;
+      default:
+        setMapType(MapTypes.STANDARD);
+        break;
+    }
+  };
   return (
-    <MapView
-      scrollEnabled={true}
-      onPress={values => setMarker([...markers, values.nativeEvent.coordinate])}
-      // mapType="satellite"
-      showsUserLocation
-      style={styles.map}
-      provider={PROVIDER_GOOGLE}
-      initialRegion={{
-        latitude: 41.0053683,
-        longitude: 29.0547955,
-        latitudeDelta: 0.0922,
-        longitudeDelta: 0.0421,
-      }}>
-      {markers.map((marker, index) => (
-        <Marker key={index} coordinate={marker}>
-          <Callout>
-            <CustomCallout />
-          </Callout>
-        </Marker>
-      ))}
+    <View style={{flex: 1}}>
+      <MapView
+        scrollEnabled={true}
+        onPress={values =>
+          setMarker([...markers, values.nativeEvent.coordinate])
+        }
+        mapType={mapType}
+        showsUserLocation
+        style={styles.map}
+        provider={PROVIDER_GOOGLE}
+        initialRegion={{
+          latitude: 41.0053683,
+          longitude: 29.0547955,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}>
+        {markers.map((marker, index) => (
+          <Marker key={index} coordinate={marker}>
+            <Callout>
+              <CustomCallout />
+            </Callout>
+          </Marker>
+        ))}
 
-      {/* <Marker
+        {/* <Marker
         draggable
         title="Konuum"
         coordinate={latlng}
         onDragEnd={e => setlatlng({x: e.nativeEvent.coordinate})}
       /> */}
-      {/* <Polyline
+        {/* <Polyline
         coordinates={[
           {
             latitude: 41.0299551,
@@ -63,7 +88,7 @@ const MapExample = () => {
         strokeColor="red"
         strokeWidth={2}
       /> */}
-      {/* <Polygon
+        {/* <Polygon
         coordinates={[
           {
             latitude: 41.0299551,
@@ -81,8 +106,9 @@ const MapExample = () => {
         fillColor="black"
         strokeWidth={2}
       /> */}
-
+      </MapView>
       <TouchableOpacity
+        onPress={() => setCustomMapType()}
         style={{
           width: 70,
           height: 70,
@@ -96,7 +122,21 @@ const MapExample = () => {
         }}>
         <Text>Map</Text>
       </TouchableOpacity>
-    </MapView>
+      <View
+        style={{
+          width: 150,
+          position: 'absolute',
+          top: 10,
+          left: 10,
+          paddingVertical: 10,
+
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'white',
+        }}>
+        <Text>{mapType}</Text>
+      </View>
+    </View>
   );
 };
 
