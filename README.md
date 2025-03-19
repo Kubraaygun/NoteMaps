@@ -28,3 +28,7 @@ This project provides a way to develop a Google Maps application using React Nat
 - **MapExample**: Contains the map component and marker adding functionality.
 - **CustomMarker**: Customizes our own marker component.
 - **CustomCallout**: Contains a custom callout bubble for clickable markers on the map.
+
+## ScreenShot
+
+![](./mapExample/map.gif)
