@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		61B5F086CFD0EAD470C1190F /* libPods-notemaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6A443B72DAD5D8FD2EEEA8 /* libPods-notemaps.a */; };
-		6454C18FB6462B8A263C39A1 /* libPods-notemaps-notemapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC8AA192D7ECF698727BEF0 /* libPods-notemaps-notemapsTests.a */; };
+		5E3302F9FE29F9B675FB5AE6 /* libPods-notemaps-notemapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D84320978967AC6C02E810C /* libPods-notemaps-notemapsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AC94E8976B65195125C49373 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 25E65C1A3BA7E4B4FF1A33A9 /* PrivacyInfo.xcprivacy */; };
+		E866E531134C4B52BADDB0C5 /* libPods-notemaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C307E352EC6E7BC0F517C7C /* libPods-notemaps.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +38,14 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = notemaps/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = notemaps/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = notemaps/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		15D857B7A33D9926B239F62A /* Pods-notemaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps.release.xcconfig"; path = "Target Support Files/Pods-notemaps/Pods-notemaps.release.xcconfig"; sourceTree = "<group>"; };
+		1C307E352EC6E7BC0F517C7C /* libPods-notemaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notemaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D84320978967AC6C02E810C /* libPods-notemaps-notemapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notemaps-notemapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E65C1A3BA7E4B4FF1A33A9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = notemaps/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		7BC8AA192D7ECF698727BEF0 /* libPods-notemaps-notemapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notemaps-notemapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6934BBAAD1968694FCBA1D /* Pods-notemaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps.debug.xcconfig"; path = "Target Support Files/Pods-notemaps/Pods-notemaps.debug.xcconfig"; sourceTree = "<group>"; };
+		7E0F89C5EF96F40377BC74FF /* Pods-notemaps-notemapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps-notemapsTests.debug.xcconfig"; path = "Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = notemaps/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		86DC5C35942719201F820F7F /* Pods-notemaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps.debug.xcconfig"; path = "Target Support Files/Pods-notemaps/Pods-notemaps.debug.xcconfig"; sourceTree = "<group>"; };
-		8F6A443B72DAD5D8FD2EEEA8 /* libPods-notemaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notemaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		929D04B749BE91E53CC736A2 /* Pods-notemaps-notemapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps-notemapsTests.release.xcconfig"; path = "Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests.release.xcconfig"; sourceTree = "<group>"; };
-		9C9BC06706E974DCA07DCB05 /* Pods-notemaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps.release.xcconfig"; path = "Target Support Files/Pods-notemaps/Pods-notemaps.release.xcconfig"; sourceTree = "<group>"; };
-		AC6B2544AABCA4695D4C673F /* Pods-notemaps-notemapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps-notemapsTests.debug.xcconfig"; path = "Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87CF6227C4E6C020FE6CA304 /* Pods-notemaps-notemapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notemaps-notemapsTests.release.xcconfig"; path = "Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6454C18FB6462B8A263C39A1 /* libPods-notemaps-notemapsTests.a in Frameworks */,
+				5E3302F9FE29F9B675FB5AE6 /* libPods-notemaps-notemapsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B5F086CFD0EAD470C1190F /* libPods-notemaps.a in Frameworks */,
+				E866E531134C4B52BADDB0C5 /* libPods-notemaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				8F6A443B72DAD5D8FD2EEEA8 /* libPods-notemaps.a */,
-				7BC8AA192D7ECF698727BEF0 /* libPods-notemaps-notemapsTests.a */,
+				1C307E352EC6E7BC0F517C7C /* libPods-notemaps.a */,
+				1D84320978967AC6C02E810C /* libPods-notemaps-notemapsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,10 +145,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86DC5C35942719201F820F7F /* Pods-notemaps.debug.xcconfig */,
-				9C9BC06706E974DCA07DCB05 /* Pods-notemaps.release.xcconfig */,
-				AC6B2544AABCA4695D4C673F /* Pods-notemaps-notemapsTests.debug.xcconfig */,
-				929D04B749BE91E53CC736A2 /* Pods-notemaps-notemapsTests.release.xcconfig */,
+				3B6934BBAAD1968694FCBA1D /* Pods-notemaps.debug.xcconfig */,
+				15D857B7A33D9926B239F62A /* Pods-notemaps.release.xcconfig */,
+				7E0F89C5EF96F40377BC74FF /* Pods-notemaps-notemapsTests.debug.xcconfig */,
+				87CF6227C4E6C020FE6CA304 /* Pods-notemaps-notemapsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,12 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "notemapsTests" */;
 			buildPhases = (
-				FDF4C0F6883CC014CE86DE25 /* [CP] Check Pods Manifest.lock */,
+				3F3F72D86FFC9D6A1E028DC0 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				472DED8B48AB78FF8AA52876 /* [CP] Embed Pods Frameworks */,
-				31620E430E4898513EFFB0D0 /* [CP] Copy Pods Resources */,
+				DBB35A4CA937E5C91B6260AC /* [CP] Embed Pods Frameworks */,
+				834667E055A29855E54A0F3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,13 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "notemaps" */;
 			buildPhases = (
-				A26EAF0F89680F433C7BFF01 /* [CP] Check Pods Manifest.lock */,
+				645164DAEBD3A9AA31BD59C7 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5E8A87195D3A537869E6AAC7 /* [CP] Embed Pods Frameworks */,
-				3AC3A21B636B3016CD727B90 /* [CP] Copy Pods Resources */,
+				5388AA77D23AD3C5F6469F21 /* [CP] Embed Pods Frameworks */,
+				B5E5B79C36B9B71DE0494FC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,58 +271,29 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		31620E430E4898513EFFB0D0 /* [CP] Copy Pods Resources */ = {
+		3F3F72D86FFC9D6A1E028DC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notemaps-notemapsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3AC3A21B636B3016CD727B90 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		472DED8B48AB78FF8AA52876 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E8A87195D3A537869E6AAC7 /* [CP] Embed Pods Frameworks */ = {
+		5388AA77D23AD3C5F6469F21 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +310,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A26EAF0F89680F433C7BFF01 /* [CP] Check Pods Manifest.lock */ = {
+		645164DAEBD3A9AA31BD59C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,26 +332,55 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FDF4C0F6883CC014CE86DE25 /* [CP] Check Pods Manifest.lock */ = {
+		834667E055A29855E54A0F3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-notemaps-notemapsTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E5B79C36B9B71DE0494FC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps/Pods-notemaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB35A4CA937E5C91B6260AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notemaps-notemapsTests/Pods-notemaps-notemapsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,7 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC6B2544AABCA4695D4C673F /* Pods-notemaps-notemapsTests.debug.xcconfig */;
+			baseConfigurationReference = 7E0F89C5EF96F40377BC74FF /* Pods-notemaps-notemapsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -443,7 +443,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 929D04B749BE91E53CC736A2 /* Pods-notemaps-notemapsTests.release.xcconfig */;
+			baseConfigurationReference = 87CF6227C4E6C020FE6CA304 /* Pods-notemaps-notemapsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -467,7 +467,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86DC5C35942719201F820F7F /* Pods-notemaps.debug.xcconfig */;
+			baseConfigurationReference = 3B6934BBAAD1968694FCBA1D /* Pods-notemaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -494,7 +494,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C9BC06706E974DCA07DCB05 /* Pods-notemaps.release.xcconfig */;
+			baseConfigurationReference = 15D857B7A33D9926B239F62A /* Pods-notemaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
