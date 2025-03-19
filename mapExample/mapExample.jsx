@@ -120,7 +120,7 @@ const MapExample = () => {
           justifyContent: 'center', // Yatayda ortalamak
           alignItems: 'center',
         }}>
-        <Text>Map</Text>
+        <Text>Maps</Text>
       </TouchableOpacity>
       <View
         style={{
@@ -129,7 +129,7 @@ const MapExample = () => {
           top: 10,
           left: 10,
           paddingVertical: 10,
-
+          borderRadius: 50,
           justifyContent: 'center',
           alignItems: 'center',
           backgroundColor: 'white',
